@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@import url("./reset.css");
+@import url("./fonts.css");
+
+#wrap {
+  width: 100%;
+}
+
+#wrap #header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+#wrap #header .title {
+  width: 100%;
+  font-size: 40px;
+  font-weight: 600;
+}
+#wrap #header .title > strong {
+  color:#81b1e9;
+}
+
+#wrap #main {
+  width: 100%;
+}
+#wrap #main .container {
+  width: 100%;
+} 
+#wrap #main .container .input-box {
+  width: 80%;
+  margin: 50px auto;
+  box-shadow: 4px 3px 5px #333;
+  border-radius: 5px;
+  background: #333;
+}
+#wrap #main .container .input-box input#todoInput {
+  border: 2px solid #333;
+  width: 80%;
+  height: 50px;
+  padding: 0 0 0 20px;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+
+
+#wrap #main .container .input-box > button {
+  width: 20%;
+  height: 50px;
+  background: #333;
+  color:#fff;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+
+
+/* List CSS */
+
+#wrap #main .container ul.content {
+  margin: 0 auto;
+  width: 80%;
+  min-width: 280px;
+}
+#wrap #main .container ul.content li{
+  margin: 20px auto;
+  border: 2px solid #333;
+  padding: 20px 0 20px 10px;
+  display: flex;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 4px 3px 5px #333;
+
+}
+#wrap #main .container ul.content li > span.item-content{
+  width: 60%;
+  line-height: 46px;
+  font-weight: 500;
+  font-family: "Dongle", 'sans-serif';
+  font-size: 30px;
+}
+#wrap #main .container ul.content li > span.input-content{
+  display: none;
+}
+#wrap #main .container ul.content li > span.input-content.add-input-content{
+  display: block;
+  line-height: 46px;
+  width: 60%;
+}
+#wrap #main .container ul.content li > span.input-content.add-input-content .input-update{
+  border: 1px solid #000;
+  padding: 5px 0 5px 10px;
+  width: 100%;
+  outline: none;
+}
+
+#wrap #main .container ul.content li .update-box {
+  margin: auto 0 auto 50px;
+  width: 40%;
+  display: flex;
+}
+
+/* btn */
+#wrap #main .container ul.content li .update-box .chk{
+  display: none;
+  margin: 0 auto;
+}
+#wrap #main .container ul.content li .update-box .chk > button {
+  background: #333;
+  color:#fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Dongle", 'sans-serif';
+  font-size: 25px;
+}
+
+#wrap #main .container ul.content li .update-box .chk.addChk{
+  display: block;
+}
+
+#wrap #main .container ul.content li .update-box .update{
+  display: block;
+  margin: 0 auto;
+}
+#wrap #main .container ul.content li .update-box .update > button {
+  background: #333;
+  color:#fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Dongle", 'sans-serif';
+  font-size: 25px;
+}
+#wrap #main .container ul.content li .update-box .update.add-update{
+  display: none;
+}
+
+#wrap #main .container ul.content li .update-box .delete {
+  display: block;
+  margin: 0 auto;
+}
+#wrap #main .container ul.content li .update-box .delete > button {
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Dongle", 'sans-serif';
+  font-size: 25px;
+}
